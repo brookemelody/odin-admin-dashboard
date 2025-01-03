@@ -30,8 +30,8 @@
     gap: 0.5rem;
 }
 
-.button:hover {
-    opacity: 0.6;
+.button:hover, .project-icon:hover {
+    opacity: 0.5;
 }
 
 .sidebar-title-icon {
@@ -45,7 +45,6 @@
 .upper-menu {
     margin-bottom: 5rem;
 }
-
 
 .header {
     display: grid;
@@ -117,10 +116,51 @@
     border: none;
     font-weight: bold;
     border-radius: 40px;
-    padding: 0.5rem 2rem 0.5rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
 }
 
 .main-content {
     display: grid;
+    grid-template-columns: 8fr 2fr;
+    grid-template-rows: 3fr 3fr 3fr;
+
     background-color: #e2e8f0;
+    padding-left: 1.5rem;
 }
+
+.projects {
+    grid-template-columns: 1 / 8;
+}
+
+.project-cards {
+    display: grid;
+    grid-template-columns: 5fr 5fr;
+    gap: 2rem;
+}
+
+.project-container {
+    background-color: white;
+    border-left-color: #f0b429;
+    border-left-width: 0.5rem;
+    border-left-style: solid;
+    border-radius: 5px;
+    padding: 1rem;
+    box-shadow: 0 5px 10px -2px rgb(154, 154, 154);
+    width: 20rem;
+}
+
+.project-container p {
+    font-weight: lighter;
+    color: #6d6d6d;
+}
+
+.project-icons {
+    display: flex;
+    gap: 1rem;
+    margin-left: 65%;
+}
+
+.project-icon {
+    width: 24px;
+}
+
