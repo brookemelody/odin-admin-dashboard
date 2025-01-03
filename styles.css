@@ -2,10 +2,8 @@
 
 .container {
     display: grid;
-    grid-template-columns: 300px 1000px;
-    /*grid-template-columns: 3fr 10fr; */
-    grid-template-rows: 100px 900px;
-    /* grid-template-rows: 1fr 9fr; */
+    grid-template-columns: 3fr 7fr;
+    grid-template-rows: 1fr 9fr;
 
     font-weight: bold;
     font-family: "Roboto", serif;
@@ -19,6 +17,7 @@
     color: white;
 
     padding-left: 1rem;
+    padding-right: 0.5rem;
 }
 
 .sidebar-title {
@@ -50,21 +49,29 @@
 
 .header {
     display: grid;
+    grid-template-columns: 6fr 4fr;
+    grid-template-rows: 4fr 6fr;
+    gap: 1rem;
+
+    padding: 1rem;
 }
 
 .small-profile-icon {
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
 }
 
-.header-upper-container {
-    display: flex;
-    gap: 5rem;
-    align-items: center;
+.medium-profile-icon {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
 }
 
 .searchbar-container {
+    grid-column: 1 / 5;
+    grid-row: 1 / 4;
+
     display: flex;
     gap: 1rem;
     align-items: center;
@@ -78,11 +85,39 @@
 }
 
 .notification-container {
+    grid-column: 5 / 10;
+    grid-row: 1 / 4;
+
     display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .header-upper-name {
     font-weight: bold;
+}
+
+.profile-container {
+    grid-column: 1 / 10;
+    grid-row: 4 / 10;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.profile-button-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.profile-button {
+    background-color: #1992d4;
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 40px;
+    padding: 0.5rem 2rem 0.5rem 2rem;
 }
 
 .main-content {
