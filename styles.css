@@ -3,7 +3,6 @@
 .container {
     display: grid;
     grid-template-columns: 2fr 8fr;
-    grid-template-rows: 1fr 9fr;
 
     font-weight: bold;
     font-family: "Roboto", serif;
@@ -156,7 +155,7 @@
     width: 20rem;
 }
 
-.project-container p, .announcements-container p {
+.project-container p, .announcements-container p, .trending-profile-text-container p:last-of-type {
     font-weight: lighter;
     color: #6d6d6d;
 }
@@ -178,20 +177,26 @@
     margin-left: 1rem;
 }
 
-.announcements-container {
+.announcements-container, .trending-container {
     background-color: white;
     padding: 2rem;
     border-radius: 5px;
     margin-right: 1rem;
+    box-shadow: 0 5px 10px -2px rgb(154, 154, 154);
 }
 
 .trending {
     grid-column: 8 / 10;
-    grid-row: 2 / 10;
 
     margin-left: 1rem;
 }
 
-.trending-container {
-    background-color: white;;
+.trending-profile {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.trending-profile-text-container p:first-of-type {
+    font-weight: normal;
 }
