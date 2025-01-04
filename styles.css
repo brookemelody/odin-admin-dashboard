@@ -2,7 +2,7 @@
 
 .container {
     display: grid;
-    grid-template-columns: 3fr 7fr;
+    grid-template-columns: 2fr 8fr;
     grid-template-rows: 1fr 9fr;
 
     font-weight: bold;
@@ -30,7 +30,7 @@
     gap: 0.5rem;
 }
 
-.button:hover, .project-icon:hover {
+.button:hover, .header-icon:hover, .project-icon:hover, .profile-button:hover {
     opacity: 0.5;
 }
 
@@ -50,7 +50,6 @@
     display: grid;
     grid-template-columns: 6fr 4fr;
     grid-template-rows: 4fr 6fr;
-    gap: 1rem;
 
     padding: 1rem;
 }
@@ -78,8 +77,8 @@
 
 .searchbar {
     background-color: #e2e8f0;
-    width: 550px;
-    height: 30px;
+    width: 35rem;
+    height: 2rem;
     border-radius: 20px;
 }
 
@@ -101,8 +100,14 @@
     grid-row: 4 / 10;
 
     display: flex;
-    gap: 1rem;
+    gap: 25%;
     align-items: center;
+}
+
+.greeting-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .profile-button-container {
@@ -115,8 +120,9 @@
     color: white;
     border: none;
     font-weight: bold;
+    font-size: 1.2rem;
     border-radius: 40px;
-    padding: 1rem 2rem 1rem 2rem;
+    padding: 1rem 2.5rem 1rem 2.5rem;
 }
 
 .main-content {
@@ -149,7 +155,7 @@
     width: 20rem;
 }
 
-.project-container p {
+.project-container p, .announcements-container p {
     font-weight: lighter;
     color: #6d6d6d;
 }
@@ -164,3 +170,27 @@
     width: 24px;
 }
 
+.announcements {
+    grid-column: 8 / 10;
+    grid-row: 1 / 2;
+
+    margin-left: 1rem;
+}
+
+.announcements-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.trending {
+    grid-column: 8 / 10;
+    grid-row: 2 / 10;
+
+    margin-left: 1rem;
+}
+
+.trending-container {
+    background-color: white;;
+}
